@@ -147,7 +147,7 @@ INNER JOIN account a ON p.accountId = a.id
 WHERE bonus =(SELECT MAX(bonus) 
 FROM payroll);
 
-  -- Who has the most absences? 
+  -- Who has more absences?
   
 SELECT e.firstName, e.lastName, e.middleName, p.employeeid, p.absentDays
 FROM payroll p INNER JOIN employee e ON p.employeeid = e.id
